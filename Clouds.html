@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Clouds</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+<script src="https://www.kirupa.com/js/prefixfree.min.js"></script>
+ 
+<style>
+#mainContent {
+    background-color: #A2BFCE;
+    border-radius: 4px;
+    padding: 10px;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+}
+.cloud {
+    position: absolute;
+}
+#bigcloud {
+  animation: bobble 2s infinite;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+  
+  h1 {
+  text-align: left;
+  display: block;
+}
+
+
+@keyframes bobble {
+    0% {
+        transform: translate3d(50px, 40px, 0px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translate3d(50px, 50px, 0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(50px, 40px, 0px);
+    }
+}
+
+  body {
+    font-family: 'Nerko One', cursive;
+    background-color: lightgray;
+  }
+p {
+  
+  font-size: 2em;
+  margin-left: 7em;
+
+}
+
+button {
+  border-radius: 10px;
+  font-size: 1em;
+  margin-left: 14em;
+  margin-top: 6em;
+}
+  
+  ul li {
+     
+   display: inline-block;
+  margin: 0;
+  padding: 0.4em;
+    
+  }
+  
+  aside {
+    text-align: left;
+  }
+</style>
+</head>
+ 
+<body>
+  <h1>Welcome to Clouds!</h1>
+  <nav>
+    <ul>
+      <li a href="https://www.google.com/search?q=sunshine&oq=sunshine&aqs=chrome..69i57j0i271.6695j0j1&sourceid=chrome&ie=UTF-8">Sunny</li>
+      <li a href="https://www.google.com/search?ei=voTNX_7MF-LR5gLWjp6ACg&q=cloudy&oq=cloudy&gs_lcp=CgZwc3ktYWIQAzIICC4QyQMQkwIyBgguEAoQQzICCC4yBQgAELEDMgUIABCxAzIECC4QQzICCAAyAgguMgIIADICCAA6BwguEEMQkwI6DgguELEDEIMBEMcBEKMCOggIABCxAxCDAToLCC4QsQMQxwEQowI6BAgAEEM6BwguELEDEEM6CAguELEDEIMBOgUILhCxAzoMCC4QyQMQChBDEJMCOgcIABCxAxBDOgoILhCxAxCDARBDUOVaWJhhYNRjaABwAXgAgAFQiAGGA5IBATaYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=psy-ab&ved=0ahUKEwj-o4i227rtAhXiqFkKHVaHB6AQ4dUDCA0&uact=5">Cloudy</li>
+      <li a href="https://www.google.com/search?ei=zITNX_-WEoXl5gKg-L6oAw&q=rainy&oq=rainy&gs_lcp=CgZwc3ktYWIQAzIKCAAQsQMQyQMQQzIHCC4QsQMQQzIECAAQQzIHCAAQsQMQQzIECAAQQzIECAAQQzIECAAQQzIHCAAQsQMQQzICCAAyAgguOggILhCxAxCDAToLCC4QsQMQxwEQowI6BQguELEDOgQILhBDOgoILhDHARCjAhBDOg0ILhCxAxDHARCjAhBDOggIABCxAxCDAToKCAAQkQIQRhD5AToFCAAQkQI6CAguEMcBEK8BOgcIABCxAxAKSgUICBIBMVCoQ1jbTmCQUGgBcAF4AIABZogBogOSAQM1LjGYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=psy-ab&ved=0ahUKEwj_rNm827rtAhWFslkKHSC8DzUQ4dUDCA0&uact=5">Rainy</li>
+    </ul>
+  </nav>
+    <div id="mainContent">
+        <img id="bigcloud" alt="#" class="cloud" height="154" src="https://www.kirupa.com/images/bigCloud.png" width="238">
+      <p>Clouds</p>
+      <button onclick="cloudy()">Tap here</button>
+    </div>
+  <aside>
+    <p>In meteorology, a cloud is an aerosol consisting of a visible mass of minute liquid droplets, frozen crystals, or other particles suspended in the atmosphere of a planetary body or similar space.[1] Water or various other chemicals may compose the droplets and crystals. On Earth, clouds are formed as a result of saturation of the air when it is cooled to its dew point, or when it gains sufficient moisture (usually in the form of water vapor) from an adjacent source to raise the dew point to the ambient temperature.</p>
+  </aside>
+  
+  <p>Footer info here</p>
+  <script>
+    function cloudy() {
+  alert("Have a cloudy day");
+}
+  </script>
+  </body>
+</html>
